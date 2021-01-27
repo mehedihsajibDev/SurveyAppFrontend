@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="300">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>survey app</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+<script 
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">  
+</script> 
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script 
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+</script>
+
+<script 
+src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js">
+</script>
+
+<script 
+src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.1/js/bootstrap-datepicker.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.1/css/bootstrap-datepicker.min.css" />
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<style>
+table, th, td {
+    margin-top: 50px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+th, td {
+  padding: 15px;
+  color: #3D3C3A;
+}   
+
+</style>
+
+
+<form action="#" method="POST">
+  <div class="container" style="max-width: 780px;">
+    
+  
+<table class="table table-striped table-responsive centered">
+  <thead>
+    <tr>
+      <td colspan="" style="padding-top: 20px;padding-bottom: 20px;">
+       <h3 class="text-center">Whole day Activity entry</h3>
+     </td>
+
+    </tr>
+  </thead>
+  <tbody>
+   
+    
+   <tr>
+      
+      <th colspan="">
+         <p class="text-center text-success"> Please register only one activity per row and for the Multi-tasking please use the last column
+     </th>
+      
+    </tr>
+    <tr>
+      <th colspan="">
+     <p class="text-center text-success">Before Making the first trip of the day, 
+please mention your time use and associated activities</p>
+</th>
+    </tr>
+    <tr>
+
+      <td>
+       <div class="timezone">
+      <div class="timezoneleft">
+        <label for="time" class="text-success">Start Time</label>
+      <input type="time" name="time" id="time"/>
+      </div>
+      <div class="timezoneright">
+        <label for="time" class="text-success">End Time</label>
+      <input type="time" name="time" id="time"/>
+        
+      </div>
+  </div>
+      </td>
+      
+    </tr>
+     <tr>
+     <td> 
+ <select class="form-select" style="font-size: 14px;">
+  <optgroup class="selectfont">
+  <option selected>Activity Name</option>
+  <option value="1">Sleeping</option>
+  <option value="2">Eating & Drinking</option>
+  <option value="3">Personal Care (except sleeping)</option>
+   <option value="4">Household Activities</option>
+  <option value="5">To help the House maid </option>
+  <option value="6">Caring For & Helping Household (HH) Members </option>
+   <option value="7">Consumer Purchases</option>
+  <option value="8">Medical and Care Services</option>
+  <option value="9">Private Care Services (except Med.)</option>
+   <option value="10">Government Services (except Med.)</option>
+  <option value="11">Caring For & Helping Non-household (NonHH) Members</option>
+  <option value="12">Education</option>
+     <option value="13">Work & Work Related Activities</option>
+  <option value="14">Sports & Exercise </option>
+  <option value="15">Relaxing, Leisure and Recreation</option>
+   <option value="16">Socializing and Communicating</option>
+  <option value="17">Religious and Spiritual Activities</option>
+  <option value="18">Volunteer Activities</option>
+  </optgroup>
+</select>
+</td>
+     </tr>
+
+     <tr>
+     <td> 
+ <select class="form-select" style="font-size: 14px;">
+  <optgroup class="selectfont">
+  <option selected>Multitasking (If applicable)</option>
+  <option value="1">Sleeping</option>
+  <option value="2">Eating & Drinking</option>
+  <option value="3">Personal Care (except sleeping)</option>
+   <option value="4">Household Activities</option>
+  <option value="5">To help the House maid </option>
+  <option value="6">Caring For & Helping Household (HH) Members </option>
+   <option value="7">Consumer Purchases</option>
+  <option value="8">Medical and Care Services</option>
+  <option value="9">Private Care Services (except Med.)</option>
+   <option value="10">Government Services (except Med.)</option>
+  <option value="11">Caring For & Helping Non-household (NonHH) Members</option>
+  <option value="12">Education</option>
+     <option value="13">Work & Work Related Activities</option>
+  <option value="14">Sports & Exercise </option>
+  <option value="15">Relaxing, Leisure and Recreation</option>
+   <option value="16">Socializing and Communicating</option>
+  <option value="17">Religious and Spiritual Activities</option>
+  <option value="18">Volunteer Activities</option>
+  </optgroup>
+</select>
+</td>
+</tr>
+
+  <tr>
+     <td> 
+ <select class="form-select" style="font-size: 14px;">
+  <optgroup class="selectfont">
+  <option selected>Who was with you:</option>
+  <option value="1">Spouse</option>
+  <option value="2">Parents</option>
+  <option value="3">Children </option>
+   <option value="4">Relatives    </option>
+  <option value="5">Other HH members   </option>
+  <option value="6">Other known person   </option>
+  <option value="6">Unknown person  </option>
+
+  </optgroup>
+</select>
+</td>
+</tr>
+<tr>
+  <td>
+      <label for="text" class="text-success">Expenditure / Cost (Optional)</label>
+      <input type="text" name="text" id="Expenditurecost"/>
+  </td>
+</tr>
+  <tr>
+  <td>
+      <label for="text" class="text-success">Reasons behind the Expenditure / Cost (Optional)</label>
+      <input type="text" name="text" id="Reasons_Expenditurecost"/>
+  </td>
+</tr>
+<tr>
+  <td>
+   <div class="moreactivity_div">
+      <a href="#"><span class="moreactivity text-success">Did you have any more activity?</span></a>
+   </div>
+  </td>
+</tr>
+<tr>
+  <td>
+    <div style="text-align: center;">
+  
+  <button type="button" class="btn btn-info btn-lg " data-toggle="modal" data-target="#myModal">
+  Did you have any more activity?</button>
+
+  
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <div class="timezone">
+      <div class="timezoneleft">
+     <button type="button" class="btn btn-info" id="yesbtn"><a href="background_questions.html">Yes</a>
+     </button>
+      </div>
+      <div class="timezoneright">
+      <button type="button" class="btn btn-danger" id="nobtn" data-dismiss="modal">No</button>
+        
+      </div>
+  </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </td>
+</tr>
+  </tbody>
+</table>
+ </div>
+</form>
+                         
+
+
+</body>
+
+</html>
